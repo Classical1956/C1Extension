@@ -17,7 +17,6 @@
 		A4D2FD5E1E6E8F8F00895E79 /* UITextField+C1MaxInput.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FD571E6E8F8F00895E79 /* UITextField+C1MaxInput.m */; };
 		A4D2FD5F1E6E8F8F00895E79 /* UITextView+C1MaxLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FD5A1E6E8F8F00895E79 /* UITextView+C1MaxLimit.m */; };
 		A4D2FD601E6E8F8F00895E79 /* UITextView+C1Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FD5C1E6E8F8F00895E79 /* UITextView+C1Placeholder.m */; };
-		A4D2FD641E6E915100895E79 /* UIApplication+Permissions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FD631E6E915100895E79 /* UIApplication+Permissions.m */; };
 		A4D2FD671E6E916E00895E79 /* UIApplication+ApplicationSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FD661E6E916E00895E79 /* UIApplication+ApplicationSize.m */; };
 		A4D2FD741E6E936200895E79 /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FD6A1E6E936200895E79 /* UIBezierPath+BasicShapes.m */; };
 		A4D2FD751E6E936200895E79 /* UIBezierPath+Length.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FD6C1E6E936200895E79 /* UIBezierPath+Length.m */; };
@@ -45,7 +44,6 @@
 		A4D2FDB31E6EB1A100895E79 /* UIImageView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FDB21E6EB1A100895E79 /* UIImageView+Addition.m */; };
 		A4D2FDBD1E6EB26200895E79 /* UILabel+AutomaticWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FDB61E6EB26200895E79 /* UILabel+AutomaticWriting.m */; };
 		A4D2FDBE1E6EB26200895E79 /* UILabel+AutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FDB81E6EB26200895E79 /* UILabel+AutoSize.m */; };
-		A4D2FDBF1E6EB26200895E79 /* UILabel+ESAdjustableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FDBA1E6EB26200895E79 /* UILabel+ESAdjustableLabel.m */; };
 		A4D2FDC01E6EB26200895E79 /* UILabel+SuggestSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FDBC1E6EB26200895E79 /* UILabel+SuggestSize.m */; };
 		A4D2FDC41E6EB9AF00895E79 /* UINavigationItem+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2FDC31E6EB9AF00895E79 /* UINavigationItem+Loading.m */; };
 		A4E760551E6FE44700ACE39B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E7604E1E6FE44700ACE39B /* NSData+Base64.m */; };
@@ -77,6 +75,7 @@
 		A4E760A31E6FF37A00ACE39B /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E760911E6FF37A00ACE39B /* NSString+Size.m */; };
 		A4E760A41E6FF37A00ACE39B /* NSString+Trims.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E760931E6FF37A00ACE39B /* NSString+Trims.m */; };
 		A4E760A51E6FF37A00ACE39B /* NSString+UrlEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E760951E6FF37A00ACE39B /* NSString+UrlEncode.m */; };
+		A4E760A81E70009C00ACE39B /* UIApplication+Permissions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E760A71E70009C00ACE39B /* UIApplication+Permissions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,8 +97,6 @@
 		A4D2FD5A1E6E8F8F00895E79 /* UITextView+C1MaxLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+C1MaxLimit.m"; sourceTree = "<group>"; };
 		A4D2FD5B1E6E8F8F00895E79 /* UITextView+C1Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+C1Placeholder.h"; sourceTree = "<group>"; };
 		A4D2FD5C1E6E8F8F00895E79 /* UITextView+C1Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+C1Placeholder.m"; sourceTree = "<group>"; };
-		A4D2FD621E6E915100895E79 /* UIApplication+Permissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Permissions.h"; sourceTree = "<group>"; };
-		A4D2FD631E6E915100895E79 /* UIApplication+Permissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Permissions.m"; sourceTree = "<group>"; };
 		A4D2FD651E6E916E00895E79 /* UIApplication+ApplicationSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ApplicationSize.h"; sourceTree = "<group>"; };
 		A4D2FD661E6E916E00895E79 /* UIApplication+ApplicationSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ApplicationSize.m"; sourceTree = "<group>"; };
 		A4D2FD691E6E936200895E79 /* UIBezierPath+BasicShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+BasicShapes.h"; sourceTree = "<group>"; };
@@ -153,8 +150,6 @@
 		A4D2FDB61E6EB26200895E79 /* UILabel+AutomaticWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutomaticWriting.m"; sourceTree = "<group>"; };
 		A4D2FDB71E6EB26200895E79 /* UILabel+AutoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoSize.h"; sourceTree = "<group>"; };
 		A4D2FDB81E6EB26200895E79 /* UILabel+AutoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutoSize.m"; sourceTree = "<group>"; };
-		A4D2FDB91E6EB26200895E79 /* UILabel+ESAdjustableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ESAdjustableLabel.h"; sourceTree = "<group>"; };
-		A4D2FDBA1E6EB26200895E79 /* UILabel+ESAdjustableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ESAdjustableLabel.m"; sourceTree = "<group>"; };
 		A4D2FDBB1E6EB26200895E79 /* UILabel+SuggestSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SuggestSize.h"; sourceTree = "<group>"; };
 		A4D2FDBC1E6EB26200895E79 /* UILabel+SuggestSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SuggestSize.m"; sourceTree = "<group>"; };
 		A4D2FDC21E6EB9AF00895E79 /* UINavigationItem+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Loading.h"; sourceTree = "<group>"; };
@@ -216,6 +211,8 @@
 		A4E760931E6FF37A00ACE39B /* NSString+Trims.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trims.m"; sourceTree = "<group>"; };
 		A4E760941E6FF37A00ACE39B /* NSString+UrlEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UrlEncode.h"; sourceTree = "<group>"; };
 		A4E760951E6FF37A00ACE39B /* NSString+UrlEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UrlEncode.m"; sourceTree = "<group>"; };
+		A4E760A61E70009C00ACE39B /* UIApplication+Permissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Permissions.h"; sourceTree = "<group>"; };
+		A4E760A71E70009C00ACE39B /* UIApplication+Permissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Permissions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,8 +329,8 @@
 		A4D2FD611E6E913B00895E79 /* UIApplication */ = {
 			isa = PBXGroup;
 			children = (
-				A4D2FD621E6E915100895E79 /* UIApplication+Permissions.h */,
-				A4D2FD631E6E915100895E79 /* UIApplication+Permissions.m */,
+				A4E760A61E70009C00ACE39B /* UIApplication+Permissions.h */,
+				A4E760A71E70009C00ACE39B /* UIApplication+Permissions.m */,
 				A4D2FD651E6E916E00895E79 /* UIApplication+ApplicationSize.h */,
 				A4D2FD661E6E916E00895E79 /* UIApplication+ApplicationSize.m */,
 			);
@@ -426,8 +423,6 @@
 				A4D2FDB61E6EB26200895E79 /* UILabel+AutomaticWriting.m */,
 				A4D2FDB71E6EB26200895E79 /* UILabel+AutoSize.h */,
 				A4D2FDB81E6EB26200895E79 /* UILabel+AutoSize.m */,
-				A4D2FDB91E6EB26200895E79 /* UILabel+ESAdjustableLabel.h */,
-				A4D2FDBA1E6EB26200895E79 /* UILabel+ESAdjustableLabel.m */,
 				A4D2FDBB1E6EB26200895E79 /* UILabel+SuggestSize.h */,
 				A4D2FDBC1E6EB26200895E79 /* UILabel+SuggestSize.m */,
 			);
@@ -664,6 +659,7 @@
 				A4D2FDBE1E6EB26200895E79 /* UILabel+AutoSize.m in Sources */,
 				A4E760971E6FF37A00ACE39B /* NSString+Base64.m in Sources */,
 				A4D2FD971E6E9A9E00895E79 /* UIImage+Alpha.m in Sources */,
+				A4E760A81E70009C00ACE39B /* UIApplication+Permissions.m in Sources */,
 				A4E7606D1E6FE45100ACE39B /* NSDate+Reporting.m in Sources */,
 				A4D2FD9E1E6E9C1D00895E79 /* UIImage+Capture.m in Sources */,
 				A4D2FD761E6E936200895E79 /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
@@ -673,10 +669,8 @@
 				A4E760A01E6FF37A00ACE39B /* NSString+RemoveEmoji.m in Sources */,
 				A4E760961E6FF37A00ACE39B /* NSMutableString+Ruby.m in Sources */,
 				A4D2FDBD1E6EB26200895E79 /* UILabel+AutomaticWriting.m in Sources */,
-				A4D2FD641E6E915100895E79 /* UIApplication+Permissions.m in Sources */,
 				A4E760A41E6FF37A00ACE39B /* NSString+Trims.m in Sources */,
 				A4E7609D1E6FF37A00ACE39B /* NSString+MIME.m in Sources */,
-				A4D2FDBF1E6EB26200895E79 /* UILabel+ESAdjustableLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

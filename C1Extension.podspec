@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                      自用extension
+                      对一些实用类的扩展收集和封装
                        DESC
 
   s.homepage         = 'https://github.com/Classical1956/C1Extension'
@@ -29,16 +29,23 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.requires_arc = true
   s.platform =:ios,'7.0'
+  # s.default_subspec = 'All'
+
+  # s.subspec 'All' do |ss|
+  #   ss.dependency 'C1Extension/UIKit'
+  #   ss.dependency 'C1Extension/Foundation'
+  # end
 
   # UIKit
-  s.subspec 'UIKit' do |s|
-    ss.source_files = 'C1Extension/UIKit/*.{h,m}'
-    ss.frameworks = 'UIKit'
+  s.subspec 'UIKit' do |ss|
+    ss.source_files = 'C1Extension/UIKit/**/*.{h,m}'
+    ss.frameworks = 'UIKit','CoreLocation'
+
   end
 
-  s.subspec 'UIKit' do |s|
-    ss.source_files = 'C1Extension/Foundation/*.{h,m}'
-    s.resources = 'C1Extension/Foundation/NSDate/NSDateTimeAgo.bundle'
+  s.subspec 'UIKit' do |ss|
+    ss.source_files = 'C1Extension/Foundation/**/*.{h,m}'
+    ss.resources = 'C1Extension/Foundation/NSDate/NSDateTimeAgo.bundle'
     ss.frameworks = 'Foundation'
   end
 

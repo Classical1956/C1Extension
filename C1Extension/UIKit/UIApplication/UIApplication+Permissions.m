@@ -12,11 +12,13 @@
 //Import required frameworks
 @import AddressBook;
 @import AssetsLibrary;
+@import Photos;
 @import AVFoundation;
 @import CoreBluetooth;
 @import CoreLocation;
 @import CoreMotion;
 @import EventKit;
+
 
 typedef void (^LocationSuccessCallback)();
 typedef void (^LocationFailureCallback)();
@@ -37,6 +39,8 @@ static char PermissionsLocationBlockFailurePropertyKey;
 
 #pragma mark - Check permissions
 -(kPermissionAccess)hasAccessToBluetoothLE {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     switch ([[[CBCentralManager alloc] init] state]) {
         case CBCentralManagerStateUnsupported:
             return kPermissionAccessUnsupported;
@@ -50,6 +54,7 @@ static char PermissionsLocationBlockFailurePropertyKey;
             return kPermissionAccessGranted;
             break;
     }
+#pragma clang diagnostic pop
 }
 
 -(kPermissionAccess)hasAccessToCalendar {
@@ -73,6 +78,8 @@ static char PermissionsLocationBlockFailurePropertyKey;
 }
 
 -(kPermissionAccess)hasAccessToContacts {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     switch (ABAddressBookGetAuthorizationStatus()) {
         case kABAuthorizationStatusAuthorized:
             return kPermissionAccessGranted;
@@ -90,9 +97,12 @@ static char PermissionsLocationBlockFailurePropertyKey;
             return kPermissionAccessUnknown;
             break;
     }
+#pragma clang diagnostic pop
 }
 
 -(kPermissionAccess)hasAccessToLocation {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     switch ([CLLocationManager authorizationStatus]) {
         case kCLAuthorizationStatusAuthorized:
             return kPermissionAccessGranted;
@@ -111,9 +121,13 @@ static char PermissionsLocationBlockFailurePropertyKey;
             break;
     }
     return kPermissionAccessUnknown;
+#pragma clang diagnostic pop
 }
 
 -(kPermissionAccess)hasAccessToPhotos {
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     switch ([ALAssetsLibrary authorizationStatus]) {
         case ALAuthorizationStatusAuthorized:
             return kPermissionAccessGranted;
@@ -131,6 +145,7 @@ static char PermissionsLocationBlockFailurePropertyKey;
             return kPermissionAccessUnknown;
             break;
     }
+#pragma clang diagnostic pop
 }
 
 -(kPermissionAccess)hasAccessToReminders {
@@ -170,6 +185,8 @@ static char PermissionsLocationBlockFailurePropertyKey;
 }
 
 -(void)requestAccessToContactsWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
     if(addressBook) {
         ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
@@ -182,6 +199,8 @@ static char PermissionsLocationBlockFailurePropertyKey;
             });
         });
     }
+#pragma clang diagnostic pop
+    
 }
 
 -(void)requestAccessToMicrophoneWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
@@ -207,12 +226,22 @@ static char PermissionsLocationBlockFailurePropertyKey;
 }
 
 -(void)requestAccessToPhotosWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
-    ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
-    [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-        accessGranted();
-    } failureBlock:^(NSError *error) {
-        accessDenied();
-    }];
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f) {
+
+        if ([PHPhotoLibrary authorizationStatus] == 3) {
+            accessGranted();
+        }else
+            accessDenied();
+    } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        if ([ALAssetsLibrary authorizationStatus] == 3) {
+            accessGranted();
+        }else
+            accessDenied();
+#pragma clang diagnostic pop
+    }
+    accessDenied();
 }
 
 -(void)requestAccessToRemindersWithSuccess:(void(^)())accessGranted andFailure:(void(^)())accessDenied {
@@ -274,10 +303,17 @@ static char PermissionsLocationBlockFailurePropertyKey;
 
 #pragma mark - Location manager delegate
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    if (status == kCLAuthorizationStatusAuthorized) {
-        self.locationSuccessCallbackProperty();
-    } else if (status != kCLAuthorizationStatusNotDetermined) {
-        self.locationFailureCallbackProperty();
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f){
+        
+    }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        if (status == kCLAuthorizationStatusAuthorized) {
+            self.locationSuccessCallbackProperty();
+        } else if (status != kCLAuthorizationStatusNotDetermined) {
+            self.locationFailureCallbackProperty();
+        }
+#pragma clang diagnostic pop
     }
 }
 
