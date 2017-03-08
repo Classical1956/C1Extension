@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'C1Extension'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of C1Extension.'
+  s.version          = '1.0.0'
+  s.summary          = 'C1Extension.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,29 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                      自用extension
                        DESC
 
-  s.homepage         = 'https://github.com/sowcjhone00@sina.com/C1Extension'
+  s.homepage         = 'https://github.com/Classical1956/C1Extension'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sowcjhone00@sina.com' => 'dracula_1956' }
-  s.source           = { :git => 'https://github.com/sowcjhone00@sina.com/C1Extension.git', :tag => s.version.to_s }
+  s.author           = { 'dracula_1956' => 'dracula_1956@outlook.com' }
+  s.source           = { :git => 'https://github.com/Classical1956/C1Extension.git', :tag => s.version, :submodules => true }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.requires_arc = true
+  s.platform =:ios,'7.0'
 
-  s.ios.deployment_target = '8.0'
+  # UIKit
+  s.subspec 'UIKit' do |s|
+    ss.source_files = 'C1Extension/UIKit/*.{h,m}'
+    ss.frameworks = 'UIKit'
+  end
 
-  s.source_files = 'C1Extension/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'C1Extension' => ['C1Extension/Assets/*.png']
-  # }
+  s.subspec 'UIKit' do |s|
+    ss.source_files = 'C1Extension/Foundation/*.{h,m}'
+    s.resources = 'C1Extension/Foundation/NSDate/NSDateTimeAgo.bundle'
+    ss.frameworks = 'Foundation'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
 end
