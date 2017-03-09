@@ -49,7 +49,6 @@
 		A4E760551E6FE44700ACE39B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E7604E1E6FE44700ACE39B /* NSData+Base64.m */; };
 		A4E760561E6FE44700ACE39B /* NSData+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E760501E6FE44700ACE39B /* NSData+Encrypt.m */; };
 		A4E760571E6FE44700ACE39B /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E760521E6FE44700ACE39B /* NSData+Hash.m */; };
-		A4E760581E6FE44700ACE39B /* NSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E760541E6FE44700ACE39B /* NSData+zlib.m */; };
 		A4E760691E6FE45100ACE39B /* NSDate+CupertinoYankee.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E7605B1E6FE45100ACE39B /* NSDate+CupertinoYankee.m */; };
 		A4E7606A1E6FE45100ACE39B /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E7605D1E6FE45100ACE39B /* NSDate+Extension.m */; };
 		A4E7606B1E6FE45100ACE39B /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E7605F1E6FE45100ACE39B /* NSDate+Formatter.m */; };
@@ -160,8 +159,6 @@
 		A4E760501E6FE44700ACE39B /* NSData+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encrypt.m"; sourceTree = "<group>"; };
 		A4E760511E6FE44700ACE39B /* NSData+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hash.h"; sourceTree = "<group>"; };
 		A4E760521E6FE44700ACE39B /* NSData+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hash.m"; sourceTree = "<group>"; };
-		A4E760531E6FE44700ACE39B /* NSData+zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+zlib.h"; sourceTree = "<group>"; };
-		A4E760541E6FE44700ACE39B /* NSData+zlib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+zlib.m"; sourceTree = "<group>"; };
 		A4E7605A1E6FE45100ACE39B /* NSDate+CupertinoYankee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CupertinoYankee.h"; sourceTree = "<group>"; };
 		A4E7605B1E6FE45100ACE39B /* NSDate+CupertinoYankee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CupertinoYankee.m"; sourceTree = "<group>"; };
 		A4E7605C1E6FE45100ACE39B /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
@@ -458,8 +455,6 @@
 				A4E760501E6FE44700ACE39B /* NSData+Encrypt.m */,
 				A4E760511E6FE44700ACE39B /* NSData+Hash.h */,
 				A4E760521E6FE44700ACE39B /* NSData+Hash.m */,
-				A4E760531E6FE44700ACE39B /* NSData+zlib.h */,
-				A4E760541E6FE44700ACE39B /* NSData+zlib.m */,
 			);
 			path = NSData;
 			sourceTree = "<group>";
@@ -650,7 +645,6 @@
 				A4D2FD2F1E6E657C00895E79 /* main.m in Sources */,
 				A4E760991E6FF37A00ACE39B /* NSString+Emoji.m in Sources */,
 				A4D2FD741E6E936200895E79 /* UIBezierPath+BasicShapes.m in Sources */,
-				A4E760581E6FE44700ACE39B /* NSData+zlib.m in Sources */,
 				A4D2FD5D1E6E8F8F00895E79 /* UITableViewCell+C1Nib.m in Sources */,
 				A4D2FD851E6E94D700895E79 /* UIButton+MiddleAligning.m in Sources */,
 				A4D2FD771E6E936200895E79 /* UIBezierPath+SVG.m in Sources */,

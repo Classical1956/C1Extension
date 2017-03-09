@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Classical1956/C1Extension.git', :tag => s.version, :submodules => true }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.requires_arc = true
-  s.platform =:ios,'7.0'
+  s.platform =:ios,'8.0'
   # s.default_subspec = 'All'
 
   # s.subspec 'All' do |ss|
@@ -40,13 +40,14 @@ Pod::Spec.new do |s|
   s.subspec 'UIKit' do |ss|
     ss.source_files = 'C1Extension/UIKit/**/*.{h,m}'
     ss.frameworks = 'UIKit','CoreLocation'
-
+    ss.platform =:ios,'7.0'
   end
 
   s.subspec 'Foundation' do |ss|
     ss.source_files = 'C1Extension/Foundation/**/*.{h,m}'
     ss.resources = 'C1Extension/Foundation/NSDate/NSDateTimeAgo.bundle'
     ss.frameworks = 'Foundation'
+    ss.platform =:ios,'8.0'
   end
 
 
