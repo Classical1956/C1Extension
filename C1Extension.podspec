@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'C1Extension'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'C1Extension.'
 
 # This description is used to generate tags and improve search results.
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
 
   end
 
-  s.subspec 'UIKit' do |ss|
+  s.subspec 'Foundation' do |ss|
     ss.source_files = 'C1Extension/Foundation/**/*.{h,m}'
     ss.resources = 'C1Extension/Foundation/NSDate/NSDateTimeAgo.bundle'
     ss.frameworks = 'Foundation'
